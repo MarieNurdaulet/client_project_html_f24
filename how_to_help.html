@@ -4,44 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <title>How to help</title>
 </head>
 
 <body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <header>
-        <a href="#main">Skip to Main Content</a>
-        <img src="images/UMSI.png" alt="Maize & Blue logo">
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <img class="logo" src="images/UMSI.png" alt="Maize & Blue logo">
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="how_to_help.html">How to help</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="how_to_help.html" class="active">How to help</a></li>
+                <li><a href="news.html">News</a></li>
             </ul>
         </nav>
-        <h1>How to help</h1>
-
+        <div class="main-text">
+            <h1>How to help</h1>
+        </div>
     </header>
-    <main id="main">
+
+    <main class="container help" id="main">
         <section>
             <h2>We are ecited you want it to help us</h2>
             <p>Thank you for supporting our mission to ensure that no one goes without at U-M.
                 There are many ways you can help. From making monetary donations to dropping off
                 items like cookware and food to donating your time.</p>
-            <div>
-                <div>
+            <div class="visual">
+                <div class="block">
                     <img src="images/dollar.svg" alt="Money">
-                    <p>Money</p>
                 </div>
-                <div>
+                <div class="block">
                     <img src="images/clock.svg" alt="Clock">
-                    <p>Time</p>
                 </div>
-                <div>
+                <div class="block">
                     <img src="images/stockpot.svg" alt="Stockpot">
-                    <p>Goods</p>
                 </div>
             </div>
         </section>
@@ -52,48 +56,6 @@
                 That’s because we use monetary donations to purchase discounted food from a community food bank.
                 Any amount can make a difference in a student’s life. Please note that all monetary donations must be
                 made online.</p>
-            <div>
-                <p>There are four options for giving. Choose your own donation path to make an impact on-campus for UM
-                    community members in need.</p>
-                <div>
-                    <div>
-                        <h3>Deborah and Steve Rosenthal Family Fund</h3>
-                        <p>This endowed fund ensures your gift is sustainable over time and supports the work of the
-                            Maize
-                            and Blue Cupboard – assisting students with food insecurity so that they can thrive during
-                            their
-                            time at the University.</p>
-                        <button>Donate</button>
-                    </div>
-
-                    <div>
-                        <h3>Maize and Blue Cupboard Endowment Fund</h3>
-                        <p>These funds will be used for long-term projects and sustainability programs. Gifts to this
-                            endowed fund will provide crucial support to students struggling with hunger and food
-                            insecurity.</p>
-                        <button>Donate</button>
-                    </div>
-
-                    <div>
-                        <h3>Maize and Blue Cupboard Fund</h3>
-                        <p>Donating to this fund will ensure your dollar goes further immediately. Maize and Blue
-                            Cupboard is a food pantry that provides crucial support to students struggling with hunger
-                            and food insecurity. It’s hard to get a full ‘Michigan Education’ if you’re worrying
-                            about where your next meal is coming from. Funds are used to help purchase food, student
-                            programming, and facility use.</p>
-                        <button>Donate</button>
-                    </div>
-
-                    <div>
-                        <h3>Strong Enough for All Fund</h3>
-                        <p>Gifts to this endowed fund support the critical and immediate needs of students at the Maize
-                            and Blue Cupboard. The Maize and Blue Cupboard provides students experiencing food
-                            insecurity with healthy food and personal products which improve their overall Michigan
-                            experience.</p>
-                        <button>Donate</button>
-                    </div>
-                </div>
-            </div>
         </section>
 
         <section>
@@ -101,10 +63,6 @@
             <p>Interested in being a volunteer? Anyone can help, no experience is necessary, and you can sign up for
                 a shift that works with your schedule. If you wish to host a drive, please contact us to see what
                 the Maize & Blue Cupboard currently needs.</p>
-            <div>
-                <button>Sign up to volunteer</button>
-                <button>Host a drive</button>
-            </div>
         </section>
 
         <section>
@@ -113,94 +71,45 @@
                 the health and safety of students are met, we only accept items that comply with federal, state,
                 and local food safety regulations. See the main How to Help page to learn more.</p>
         </section>
-
-        <section>
-            <h2>Donation tips</h2>
-            <ul>
-                <li>Fresh produce should be whole, with no signs of mold, spoilage or severe bruising.</li>
-                <li>Canned and dry goods should be unopened and in their original packaging, have an
-                    intact label with ingredients and allergens, and be in good condition (no dents,
-                    bulging, or rust).</li>
-                <li>We are unable to accept expired items.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Donate food items, including</h2>
-            <ul>
-                <li>Fruits & vegetables in a variety of colors. Look for canned fruit in its own juice
-                    or with “no sugar added.” Look for canned vegetables what say “low sodium” or
-                    “no salt added.”</li>
-                <li>Whole grains as often as you can, including brown rice or barley, oatmeal,
-                    quinoa and more. Look for 100% whole grain on the package or look for whole grain
-                    as the first ingredient on the ingredient list.</li>
-                <li>Protein-rich foods like canned beans, seafood, and lean meats. Look for “no salt
-                    added,” low sodium, and canned in water (instead of oil) varieties.</li>
-                <li>Low-fat (1%) or non-fat dairy products.</li>
-                <li>Shelf-stable healthy fats that are liquid at room temperature.</li>
-                <li>Donate dry, ground herbs and spices whenever possible. By donating spices, you help
-                    enable students to flavor their food without a lot of added salt.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Donate kitchenware and personal care items like:</h2>
-            <ul>
-                <li>Pots and pans, cutting boards and knives, plates, bowls and silverware and more.</li>
-                <li>Students can always use items like toilet paper, paper towel and other self-care
-                    necessities like shampoo, conditioner and deodorant.</li>
-            </ul>
-        </section>
-
-        <section>
-            <img src="images/barbour.jpg" alt="Front door of the office">
-            <div>
-                <h3>Location</h3>
-                <p>Located in the basement of the Betsy Barbour Residence Hall, please enter via the
-                    Maynard entrance only to ensure privacy for residents. Please contact us if you
-                    need ramp or elevator access.</p>
-                <address>
-                    <p>Adress: <a href="https://shorturl.at/VKijs">420 S State St Ann Arbor, MI 48109</a></p>
-                    <p>Phone: <a href="tel:+17349362794">734-936-2794</a></p>
-                </address>
-            </div>
-
-            <div>
-                <h3>Hours</h3>
-                <p>On Monday 10/30 the Maize and Blue Cupboard will transition to shopping by
-                    appointment only. Schedule your shopping appointment <a href="https://shorturl.at/7o0Ft">here</a>.
-                </p>
-            </div>
-        </section>
     </main>
 
     <footer>
-        <img src="images/UMSI.png" alt="Maize & Blue logo">
-        <ul>
-            <li>
-                <a href="https://www.facebook.com/maizeandbluecupboard/">
-                    <img src="images/facebook.svg" alt="Facebook logo">
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/umichcupboard">
-                    <img src="images/twitter.svg" alt="Twitter logo">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/maizeandbluecupboard">
-                    <img src="images/insta.svg" alt="Instagram logo">
-                </a>
-            </li>
-        </ul>
-        <p>
-            <a href="https://studentlife.umich.edu/accessib">Web Accessibility Statement</a> |
-            <a href="https://t.ly/izu0u">Non-Discrimination Policy</a> |
-            <a href="https://umich.edu">U–M Gateway</a>
-        </p>
-        <p>© 2024 The Regents of the University of Michigan</p>
+        <div class="footer-text">
+            <h2>For more information on how you can assist us, feel free to contact us</h2>
+        </div>
+        <div class="contacts">
+            <div><img src="images/address.svg" alt="Address">
+                <address>
+                    <a href="https://shorturl.at/VKijs">420 S State St Ann Arbor, MI 48109</a>
+                </address>
+            </div>
+            <div><img src="images/phone.svg" alt="Phone number">
+                <address>
+                    <a href="tel:+17349362794">734-936-2794</a>
+                </address>
+            </div>
+            <div><img src="images/facebook.svg" alt="Facebook">
+                <a href="https://www.facebook.com/maizeandbluecupboard/">Facebook</a>
+            </div>
+            <div><img src="images/insta.svg" alt="Instagram">
+                <a href="https://www.instagram.com/maizeandbluecupboard">Instagram</a>
+            </div>
+        </div>
+        <div class="sitemap">
+            <nav class="sitemap-navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="how_to_help.html">How to help</a></li>
+                    <li><a href="news.html">News</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="logo"><img src="images/UMSI.png" alt="Maize & Blue logo"></div>
+        <div class="copyright">
+            <p>&copy; 2024 Maize & Blue. All rights reserved.</p>
+        </div>
     </footer>
-
 </body>
 
 </html>
