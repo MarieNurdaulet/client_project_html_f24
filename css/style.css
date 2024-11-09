@@ -331,6 +331,7 @@ footer .logo img {
     margin-bottom: 1rem;
 }
 
+
 .visual {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -356,15 +357,59 @@ footer .logo img {
     width: 30%;
 }
 
+legend {
+    font-size: 2rem;
+    /* 32px */
+    line-height: 1;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    /* 16px */
+}
+
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+div label {
+    display: block;
+}
+
+fieldset input {
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+}
+
+fieldset input[type="submit"] {
+    background-color: #00274C;
+    color: #fff;
+    font-weight: 700;
+}
+
 /* page not found styles */
 .not-found {
     text-align: center;
-    padding: 6rem;
+    padding: 6rem 1rem;
+    margin-bottom: 3rem;
 }
 
 .not-found h1 {
     font-size: 3rem;
     font-weight: 600;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.not-found img {
+    width: 50%;
+}
+
+#default-img {
+    display: none;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -378,6 +423,16 @@ footer .logo img {
         /* sets to default setting */
         transition: none;
         /* sets to default setting */
+    }
+
+    #animated-gif {
+        display: none;
+    }
+
+    #default-img {
+        display: block;
+        margin: auto;
+        padding-bottom: 0.5rem;
     }
 }
 
@@ -449,7 +504,7 @@ footer .logo img {
 
     .help section {
         padding: 0rem 6rem 1.5rem 6rem;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
     }
 
     .visual div:nth-child(3n+1) {
@@ -462,6 +517,24 @@ footer .logo img {
 
     .visual div:nth-child(3n) {
         grid-column: 3;
+    }
+
+    fieldset {
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 2rem;
+    }
+
+    fieldset input[type="submit"] {
+        grid-column: span 2;
+    }
+
+    .not-found {
+        padding: 6rem;
+        margin-bottom: 10rem;
+    }
+
+    .not-found img {
+        width: 30%;
     }
 
 }

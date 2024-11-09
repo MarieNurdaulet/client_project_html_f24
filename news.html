@@ -110,9 +110,12 @@
         </div>
         <div class="logo"><img src="images/UMSI.png" alt="Maize & Blue logo"></div>
         <div class="copyright">
-            <p>&copy; 2024 Maize & Blue. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Maize & Blue. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
